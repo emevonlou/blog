@@ -1,27 +1,28 @@
 baseurl      = "https://vonlou.dev"
 title        = "Emanuelle Costa"
-languageCode = "en-us"
+languageCode = "pt-br"
 theme        = "hello-friend-ng"
 paginate     = 10
 
+defaultContentLanguage = "pt-br"
+enableRobotsTXT = true
+enableEmoji     = true
+
+[author]
+  name = "Emanuelle Costa"
+
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
+  dateform        = "2 Jan 2006"
+  dateformShort   = "2 Jan"
+  dateformNum     = "02/01/2006"
+  dateformNumTime = "02/01/2006 15:04"
 
-  # Subtitle for home
-  homeSubtitle = "....."
-
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
-  disableReadOtherPosts = false
-
-  # Enable sharing buttons, if you like
+  homeSubtitle = "---------"
+  disableReadOtherPosts = true
   enableSharingButtons = true
 
-  # Metadata mostly used in document's head
-  description = "My new homepage or blog"
-  keywords = "homepage, blog"
+  description = "Meu blog"
+  keywords = "blog"
   images = [""]
 
 [[params.social]]
@@ -30,29 +31,32 @@ paginate     = 10
 [[params.social]]
   name = "twitter"
   url = "https://twitter.com/emevonlou"
+[[params.social]]
+  name = "instagram"
+  url = "https://instagram.com/emevonlou"
+
+
 [taxonomies]
     category = "blog"
     tag      = "tags"
     series   = "series"
 
 [languages]
-  [languages.en]
+  [languages.pt-br]
     title = "Emanuelle Costa"
-    subtitle = "A simple theme for Hugo"
+    subtitle = "Hello!"
     keywords = ""
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-    readOtherPosts = "Read other posts"
+    readOtherPosts = "Leia outros posts"
 
-    [languages.en.params.logo]
-      logoText = "$ 88888888888"
+    [languages.pt-br.params.logo]
+      logoText = "$ 111111111"
       logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
-
-  # And you can even create generic menu
   [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
+    identifier = "about"
+    name       = "Sobre"
+    url        = "/about"
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
     url        = "/posts"

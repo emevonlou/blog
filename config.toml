@@ -1,4 +1,4 @@
-baseurl      = "vonlou.dev"
+baseurl      = "/"
 title        = "Emanuelle Costa"
 languageCode = "en-us"
 theme        = "hello-friend-ng"

@@ -2,7 +2,7 @@ baseurl      = "/"
 title        = "Emanuelle Costa"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
-paginate     = 10
+paginate     = 5
 
 [params]
   dateform        = "Jan 2, 2006"
